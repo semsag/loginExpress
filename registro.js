@@ -3,7 +3,7 @@ const bcrypt = require('bcrypt');
 const saltRounds = 10;
 const registro = async (req, res) => { //req = request, que es una petición; res = response, respuesta
     if (!req.session.usuario) {
-        res.status(401).send('No autorizado')
+        res.status(401).send('No autorizadoss')
         return
     }
     const datos = req.query;
